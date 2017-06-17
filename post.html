@@ -1,0 +1,130 @@
+
+<html>
+<head>
+	<link href="blog.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+	</script>
+    <script   src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="jsvalidationpost.js"></script>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Need Help?</title>
+	
+</head>
+<body>
+	<div id="header">
+		<button id="button3" onclick="window.location.href='jobs.html'" type="button">Find a Job</button> <button id="button4" onclick="window.location.href='post.html'" type="button">Need Help?</button>
+		<div class="logo">
+			<a href="index.html">Job <span>Connections</span></a>
+		</div>
+		<div>
+			<button id="signin" onclick="window.location.href='loginblog.html'">Sign In</button>
+		</div>
+		<div id="logo">
+			<a href="index.html"><img alt="W3Schools" id="image1" src="http://meos17.com/site/wp-content/uploads/2015/07/man-worker-silhouette.png"></a>
+		</div>
+	</div>
+	<div id="menubar">
+		<center>
+			<a class="mobile" href="index.html">Menu</a>
+		</center>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<div id="nav">
+				<ul>
+					<li>
+						<a href="find.html">Post Your Skills</a>
+					</li>
+					<li>
+						<a href="post.html">Need Help?</a>
+					</li>
+					<li>
+						<a href="jobs.html">Jobs</a>
+					</li>
+					<li>
+						<a href="contactus.html">Contact Us</a>
+					</li>
+					<li id="js">
+						<a href="javascript.html">Javascript Applications</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<center></center>
+			<center>
+				<h1>Please describe the help or assistance you need: </h1>
+			</center>
+			<div id="findjob">
+                
+				<form id="commentform" method="get" action='index.html'> 
+					<label>Name:</label> <input type="text" placeholder="Enter your name" name="name" required><br>
+					<label>Email:</label> <input id="email" type="email" name="email"  placeholder="Please enter your email" required><br>
+					
+                    What is your field or industry? <select>
+						<option value="selecting">
+							Select area of interest
+						</option>
+						<option value="CleaningServices">
+							Cleaning Services
+						</option>
+						<option value="UtilityServices">
+							Utility Services
+						</option>
+						<option value="Finance">
+							Finance
+						</option>
+						<option value="Education">
+							Education
+						</option>
+						<option value="OutdoorServices">
+							Outdoor Services
+						</option>
+						<option value="NonMedicalHomeServices">
+							Non-Medical Home Services
+						</option>
+						<option value="Automotive">
+							Automotive
+						</option>
+						<option value="Transportation">
+							Transportation
+						</option>
+					</select> <br>
+
+					
+					<label>Please describe the help or assistance you need: Max 200 characters</label> <br>
+					<input disabled maxlength="3" size="3" value="200" id="counter"><br>
+                    <textarea onkeyup="textCounter(this, 'counter' ,200);" cols="50" id="message" name="message" placeholder="Enter your needs here" rows="4" maxlength="200"  required></textarea><br>
+                    <label>Please select date of services needed</label> <br>
+                    <input type="date" name="date" required><br>
+					<button id="submit2"  type="submit">Submit</button>
+                    
+                    
+                    
+				</form>
+			</div>
+		</div>
+        
+		<div id="footer1">
+			<p>Copyright 2017 Robinson.frostyfish.com</p>
+			<p>All rights reserved</p>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="jobs.html">Jobs</a>
+				</li>
+				<li>
+					<a href="contactus.html">Need Help</a>
+				</li>
+				<li>
+					<a href="contactus.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

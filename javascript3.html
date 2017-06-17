@@ -1,0 +1,295 @@
+
+<html>
+<head>
+	<link href="blog.css" rel="stylesheet" type="text/css">
+    <link href="javascript.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+	
+	<script src="jq1.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+	</script>
+   <style>
+       button {
+           width:70px;
+       }
+       #seem {
+           width: 120px;
+            height: 80px;
+           font-size: 1.4em;
+       }
+    </style>
+
+
+	<title>Choose your services:</title>
+</head>
+<body>
+	<div id="header">
+		<div class="logo">
+			<a href="index.html">Job <span>Connections</span></a>
+		</div>
+		<div >
+			<button id="signin" onclick="window.location.href='loginblog.html'">Sign In</button>
+		</div>
+		<div id="logo">
+			<a href="index.html"><img alt="W3Schools" id="image1" src="http://meos17.com/site/wp-content/uploads/2015/07/man-worker-silhouette.png"></a>
+		</div>
+        
+	</div>
+	<div id="menubar">
+		<center>
+			<a class="mobile" href="index.html">Menu</a>
+		</center>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<div id="nav">
+				<ul>
+					   <li>
+						<a href="find.html">Post Your Skills</a>
+					</li>
+                    <li>
+						<a href="post.html">Need Help?</a>
+					</li>
+					<li>
+						<a href="jobs.html">Jobs</a>
+					</li>
+					<li>
+						<a href="contactus.html">Contact Us</a>
+					</li>
+					
+                    <li>
+						<a href="javascript.html">Javascript Applications</a>
+					</li>
+                    
+                    
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+      
+       <h1>Home Advisor Application</h1>
+            
+            
+      
+
+<div id="hm">
+    
+What Services do you need? 
+<br/>
+    <form>
+  <select id="mySelect">
+    <option>Cleaning or Maid Services</option>
+    <option>Handyman Services</option>
+    <option>Moving</option>
+    <option>Pet Services</option>
+    <option>Non-Medical Home Serives</option>
+    <option>Car Services</option>
+  </select>
+    </form>
+
+<p>Click Ok to register your answer.</p>
+
+<button onclick="myFunction()">Ok</button>
+
+<p id="demo"></p>
+
+<br/>
+</div>
+
+        
+<div id="hm">
+What is the Location Type: Residential or Commercial or Industrial or Other: 
+<br/>
+    <form>
+  <select id="mySelect2">
+    <option>Residential</option>
+    <option>Commercial</option>
+    <option>Industrial</option>
+     <option>Other</option>
+  </select>
+  </form>
+
+
+<p>Click Ok to register your answer.</p>
+
+<button onclick="myFunction2()">Ok</button>
+
+<p id="demo2"></p>
+<br/>
+</div>
+
+ 
+<div id="hm">
+Is this a 1 Time or Recurring Service?
+    <br/>
+
+ <form>
+  <select id="mySelect3">
+    <option>1 Time</option>
+    <option>Recurring</option>
+  </select>
+ </form>
+
+<p>Click Ok to register your answer.</p>
+
+<button onclick="myFunction3()">Ok</button>
+
+<p id="demo3"></p>
+<br/>
+</div>
+    
+<div id="hm">
+When do you need this Service?
+<br/>
+     <form>
+  <select id="mySelect4">
+    <option>Immediately</option>
+    <option>Within 1 Week</option>
+    <option>After 1 week</option>
+     <option>Flexible</option>
+  </select>
+ </form>
+
+<p>Click Ok to register your answer.</p>
+
+<button onclick="myFunction4()">Ok</button>
+
+<p id="demo4"></p>
+<br/>
+</div>
+
+<div id="hm">
+How many locations/units?
+<br/>
+     <form>
+  <select id="mySelect5">
+    <option>1</option>
+    <option>2-5</option>
+    <option>6-10</option>
+     <option>11+</option>
+  </select>
+ </form>
+
+<p>Click Ok to register your answer.</p>
+
+<button onclick="myFunction5()">Ok</button>
+
+<p id="demo5"></p>
+<br/>
+</div>
+
+<div id="hm">
+What is the approximate square footage of the area?
+<br/>
+     <form>
+  <select id="mySelect6">
+    <option>0-1200 sq ft</option>
+    <option>1201-3000 sq ft</option>
+    <option>3000-10,000 sq ft</option>
+     <option>10,000+ sq ft</option>
+  </select>
+ </form>
+
+<p>Click Ok to register your answer.</p>
+
+<button onclick="myFunction6()">Ok</button>
+
+<p id="demo6"></p>
+<br/>
+</div>
+
+
+
+
+
+
+
+Any details you would like to add? <br>
+<form>
+<textarea id="usermsg" rows="4" cols="70" onfocus="if(this.value == 'enter your text here')  this.value='';" onblur="if(this.value == '') this.value='enter your text here';" >enter your text here</textarea>
+ </form>
+
+<p id="demo7"></p>
+
+
+<br><br>
+
+
+<button  id="seem">Submit Form</button>
+        
+   
+            
+    </div>
+
+
+
+
+<script>
+
+$('#seem').click(function() {
+    alert('Thanks for submitting');
+    window.location.href = 'http://www.parttimeconnections.com/';
+    
+});
+    
+function myFunction() {
+    
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "Selected:" +x ;
+    
+    
+};
+
+function myFunction2() {
+    var x2 = document.getElementById("mySelect2").value;
+    document.getElementById("demo2").innerHTML =  "Selected:"  +x2 ;
+    
+};
+function myFunction3() {
+    var x3 = document.getElementById("mySelect3").value;
+    document.getElementById("demo3").innerHTML =  "Selected:"  +x3 ;
+};
+function myFunction4() {
+    var x4 = document.getElementById("mySelect4").value;
+    document.getElementById("demo4").innerHTML =  "Selected:"  +x4 ;
+};
+function myFunction5() {
+    var x5 = document.getElementById("mySelect5").value;
+    document.getElementById("demo5").innerHTML =  "Selected:" +x5 ;
+};
+function myFunction6() {
+    var x6 = document.getElementById("mySelect6").value;
+    document.getElementById("demo6").innerHTML =  "Selected:" +x6 ;
+};    
+    
+
+</script>
+
+
+        
+        
+        
+            
+		
+		<div id="footer1">
+			<p>Copyright 2017 Robinson.frostyfish.com</p>
+			<p>All rights reserved</p>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="jobs.html">Jobs</a>
+				</li>
+				<li>
+					<a href="contactus.html">Need Help</a>
+				</li>
+				<li>
+					<a href="contactus.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
